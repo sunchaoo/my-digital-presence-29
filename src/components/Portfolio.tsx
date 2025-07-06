@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const Portfolio = () => {
   const projects = [
@@ -101,10 +101,6 @@ const Portfolio = () => {
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
                   </Button>
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="mr-2 h-4 w-4" />
-                    Source Code
-                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -140,11 +136,7 @@ const Portfolio = () => {
                   <div className="flex gap-2">
                     <Button size="sm" variant="outline" className="flex-1 text-xs">
                       <ExternalLink className="mr-1 h-3 w-3" />
-                      Live
-                    </Button>
-                    <Button size="sm" variant="outline" className="flex-1 text-xs">
-                      <Github className="mr-1 h-3 w-3" />
-                      Code
+                      Live Demo
                     </Button>
                   </div>
                 </CardContent>

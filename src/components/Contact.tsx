@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter, QrCode } from "lucide-react";
+import { Mail, MapPin, Linkedin, Github, QrCode } from "lucide-react";
 import linkedinQR from "@/assets/linkedin-qr.png";
 
 const Contact = () => {
@@ -63,16 +63,6 @@ const Contact = () => {
                 
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-primary/10 rounded-lg">
-                    <Phone className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-primary">Phone</p>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -100,12 +90,6 @@ const Contact = () => {
                     className="flex items-center justify-center w-12 h-12 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-lg transition-colors"
                   >
                     <Github className="h-5 w-5" />
-                  </a>
-                  <a 
-                    href="#" 
-                    className="flex items-center justify-center w-12 h-12 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-lg transition-colors"
-                  >
-                    <Twitter className="h-5 w-5" />
                   </a>
                 </div>
               </CardContent>
