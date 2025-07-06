@@ -1,87 +1,53 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Twitter, QrCode } from "lucide-react";
+import linkedinQR from "@/assets/linkedin-qr.png";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted");
-  };
-
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Let's Work Together
+            Let's Connect
           </h2>
           <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to bring your ideas to life? I'd love to hear about your project and discuss how we can collaborate.
+            Ready to connect and collaborate? Scan the QR code below to connect with me on LinkedIn.
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <Card className="shadow-card">
-            <CardHeader>
-              <CardTitle className="text-2xl text-primary">Send a Message</CardTitle>
+        <div className="grid lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          {/* LinkedIn QR Code */}
+          <Card className="shadow-card hover:shadow-glow transition-shadow duration-300">
+            <CardHeader className="text-center">
+              <div className="flex justify-center mb-4">
+                <div className="p-3 bg-primary/10 rounded-lg">
+                  <QrCode className="h-8 w-8 text-primary" />
+                </div>
+              </div>
+              <CardTitle className="text-2xl text-primary">Connect on LinkedIn</CardTitle>
               <CardDescription>
-                Fill out the form below and I'll get back to you within 24 hours.
+                Scan this QR code with your phone's camera to connect with me instantly
               </CardDescription>
             </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="John" required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Doe" required />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="john@example.com" required />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="Project Collaboration" required />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell me about your project..." 
-                    className="min-h-[120px]"
-                    required 
-                  />
-                </div>
-                
-                <Button type="submit" className="w-full shadow-glow hover:shadow-glow">
-                  <Mail className="mr-2 h-4 w-4" />
-                  Send Message
-                </Button>
-              </form>
+            <CardContent className="flex justify-center">
+              <div className="bg-white p-6 rounded-lg shadow-inner">
+                <img 
+                  src={linkedinQR} 
+                  alt="LinkedIn QR Code"
+                  className="w-48 h-48 object-contain"
+                />
+              </div>
             </CardContent>
           </Card>
           
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <Card className="shadow-card">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary">Get in Touch</CardTitle>
                 <CardDescription>
-                  Prefer to reach out directly? Here are my contact details.
+                  Prefer traditional contact methods? Here are my details.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -149,8 +115,8 @@ const Contact = () => {
               <CardContent className="p-6">
                 <h3 className="font-semibold text-primary mb-2">Quick Response</h3>
                 <p className="text-sm text-muted-foreground">
-                  I typically respond to messages within 24 hours. For urgent matters, 
-                  please call or send a message on LinkedIn.
+                  LinkedIn is the fastest way to reach me. I typically respond to messages 
+                  within a few hours during business days.
                 </p>
               </CardContent>
             </Card>
