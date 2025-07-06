@@ -17,17 +17,23 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 214 84% 18%;
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 214 84% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 214 20% 95%;
+    --secondary-foreground: 214 84% 18%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 214 84% 35%;
+    --accent-foreground: 210 40% 98%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(214 84% 18%), hsl(214 84% 35%));
+    --subtle-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(214 20% 98%));
+    --card-shadow: 0 10px 30px -10px hsl(214 84% 18% / 0.1);
+    --glow-shadow: 0 0 40px hsl(214 84% 35% / 0.15);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
