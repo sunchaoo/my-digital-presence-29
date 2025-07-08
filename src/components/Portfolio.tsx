@@ -131,44 +131,6 @@ const Portfolio = () => {
             </Card>
           ))}
         </div>
-        
-        {/* Other Projects */}
-        <div>
-          <h3 className="text-2xl font-semibold text-primary mb-8 text-center">More Projects</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {otherProjects.map((project, index) => (
-              <Card 
-                key={index} 
-                className="shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1"
-              >
-                <CardHeader>
-                  <CardTitle className="text-lg text-primary">{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="secondary" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <Badge variant="secondary" className="text-xs">
-                        +{project.technologies.length - 3}
-                      </Badge>
-                    )}
-                  </div>
-                  <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="flex-1 text-xs">
-                      <ExternalLink className="mr-1 h-3 w-3" />
-                      Live Demo
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
