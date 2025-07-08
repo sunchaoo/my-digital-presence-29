@@ -1,38 +1,38 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Palette, Database, Globe, Zap, Users } from "lucide-react";
+import { BarChart3, Target, Database, Globe, Zap, Users } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      icon: Code,
-      title: "Development",
-      skills: ["React", "TypeScript", "Node.js", "Python", "Next.js", "Vue.js"]
+      icon: Target,
+      title: "Product Strategy",
+      skills: ["Product Roadmapping", "Market Analysis", "Competitive Intelligence", "User Research", "OKRs", "Product Vision"]
     },
     {
-      icon: Palette,
-      title: "Design",
-      skills: ["UI/UX Design", "Figma", "Adobe Creative Suite", "Responsive Design", "Prototyping"]
+      icon: BarChart3,
+      title: "Data & Analytics",
+      skills: ["Data Strategy", "ML-driven Insights", "A/B Testing", "Metrics Platforms", "SQL", "Business Intelligence"]
     },
     {
       icon: Database,
-      title: "Backend",
-      skills: ["PostgreSQL", "MongoDB", "REST APIs", "GraphQL", "AWS", "Docker"]
+      title: "Technical Systems",
+      skills: ["API Strategy", "Supply Chain Systems", "eCommerce Platforms", "In-store Automation", "Cloud Architecture", "System Integration"]
     },
     {
       icon: Globe,
-      title: "Web Technologies",
-      skills: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "SASS", "Webpack"]
+      title: "Domain Expertise",
+      skills: ["eCommerce Growth", "Supply Chain", "Operations", "Amazon Fresh", "Retail Tech", "Global Scale Products"]
     },
     {
       icon: Zap,
-      title: "Tools & Workflow",
-      skills: ["Git", "GitHub Actions", "Jira", "Slack", "VS Code", "Postman"]
+      title: "Tools & Methodology",
+      skills: ["Jira", "Confluence", "SAFe Agile", "Figma", "Tableau", "AWS Analytics"]
     },
     {
       icon: Users,
-      title: "Soft Skills",
-      skills: ["Team Leadership", "Project Management", "Communication", "Problem Solving", "Mentoring"]
+      title: "Leadership",
+      skills: ["Team Leadership", "Stakeholder Management", "Root Cause Analysis", "Cross-functional Collaboration", "Mentoring", "Executive Communication"]
     }
   ];
 

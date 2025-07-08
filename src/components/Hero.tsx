@@ -17,12 +17,12 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6 leading-tight">
               Hello, I'm
               <span className="block text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">
-                [Your Name]
+                Chao Sun
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              A passionate professional crafting innovative solutions and building meaningful connections in the digital world.
+              Senior Product Manager at Amazon driving data-informed products and scalable solutions across global markets.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -40,7 +40,7 @@ const Hero = () => {
                 size="lg"
                 asChild
               >
-                <a href="https://topmate.io/your-profile" target="_blank" rel="noopener noreferrer">
+                <a href="https://topmate.io/chao_sun" target="_blank" rel="noopener noreferrer">
                   <Users className="mr-2 h-5 w-5" />
                   Request Mentorship
                 </a>
@@ -48,10 +48,10 @@ const Hero = () => {
             </div>
             
             <div className="flex gap-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/chao-product/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/sunchaoo" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-6 w-6" />
               </a>
             </div>

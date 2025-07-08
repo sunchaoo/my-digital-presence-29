@@ -14,42 +14,42 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              With a passion for innovation and a commitment to excellence, I bring a unique blend of 
-              technical expertise and creative vision to every project. My journey has taken me through 
-              diverse challenges that have shaped my problem-solving approach and collaborative mindset.
+              Senior PM at Amazon with 8+ years driving data-informed products across eCommerce, Metrics, API, 
+              supply chain, and operations. I led global-scale product initiatives across Amazon Fresh and Estée Lauder—delivering 
+              ML-driven metrics platforms, in-store automation tools, and supply chain systems used across US and EU.
             </p>
             
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              I believe in the power of technology to transform ideas into reality, and I'm constantly 
-              exploring new ways to push boundaries and create meaningful impact through my work.
+              I specialize in translating ambiguous business problems into actionable product strategies and delivering high-ROI outcomes. 
+              My core strengths include Data Strategy & Automation, In-store Tech, eCommerce Growth, Team Leadership, Root Cause Analysis, 
+              and Scalable Product Execution.
             </p>
             
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">5+</div>
+                <div className="text-3xl font-bold text-primary mb-2">8+</div>
                 <div className="text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-muted-foreground">Projects Completed</div>
+                <div className="text-3xl font-bold text-primary mb-2">Global</div>
+                <div className="text-muted-foreground">Scale Products</div>
               </div>
             </div>
           </div>
           
           <div className="space-y-4">
             <Card className="p-6 shadow-card hover:shadow-glow transition-shadow duration-300">
-              <h3 className="text-xl font-semibold text-primary mb-3">My Mission</h3>
+              <h3 className="text-xl font-semibold text-primary mb-3">Education</h3>
               <p className="text-muted-foreground">
-                To create innovative solutions that bridge the gap between complex problems 
-                and elegant, user-friendly experiences.
+                MBA from Columbia Business School | Certified SAFe Product Owner/Product Manager
               </p>
             </Card>
             
             <Card className="p-6 shadow-card hover:shadow-glow transition-shadow duration-300">
-              <h3 className="text-xl font-semibold text-primary mb-3">My Vision</h3>
+              <h3 className="text-xl font-semibold text-primary mb-3">Product Philosophy</h3>
               <p className="text-muted-foreground">
-                Building a future where technology empowers people and organizations 
-                to achieve their full potential.
+                Transforming ambiguous business challenges into data-driven product strategies 
+                that deliver measurable impact at global scale.
               </p>
             </Card>
           </div>

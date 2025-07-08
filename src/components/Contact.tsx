@@ -80,13 +80,17 @@ const Contact = () => {
               <CardContent>
                 <div className="flex gap-4">
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/chao-product/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
                     className="flex items-center justify-center w-12 h-12 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-lg transition-colors"
                   >
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a 
-                    href="#" 
+                    href="https://github.com/sunchaoo" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
                     className="flex items-center justify-center w-12 h-12 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-lg transition-colors"
                   >
                     <Github className="h-5 w-5" />
