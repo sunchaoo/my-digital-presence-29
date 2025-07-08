@@ -7,17 +7,12 @@ const Skills = () => {
     {
       icon: Target,
       title: "Product Strategy",
-      skills: ["Product Roadmapping", "Market Analysis", "Competitive Intelligence", "User Research", "OKRs", "Product Vision"]
+      skills: ["Product Roadmapping", "Market Analysis", "User Research", "OKRs", "Product Vision"]
     },
     {
       icon: BarChart3,
       title: "Data & Analytics",
       skills: ["Data Strategy", "ML-driven Insights", "A/B Testing", "Metrics Platforms", "SQL", "Business Intelligence"]
-    },
-    {
-      icon: Database,
-      title: "Technical Systems",
-      skills: ["API Strategy", "Supply Chain Systems", "eCommerce Platforms", "In-store Automation", "Cloud Architecture", "System Integration"]
     },
     {
       icon: Globe,
@@ -27,12 +22,12 @@ const Skills = () => {
     {
       icon: Zap,
       title: "Tools & Methodology",
-      skills: ["Jira", "Confluence", "SAFe Agile", "Figma", "Tableau", "AWS Analytics"]
+      skills: ["Jira", "Confluence", "SAFe Agile", "Figma", "Tableau", "AWS Analytics", "Lovable", "GitHub"]
     },
     {
       icon: Users,
       title: "Leadership",
-      skills: ["Team Leadership", "Stakeholder Management", "Root Cause Analysis", "Cross-functional Collaboration", "Mentoring", "Executive Communication"]
+      skills: ["Team Leadership", "Stakeholder Management", "Cross-functional Collaboration", "Mentoring", "Executive Communication"]
     }
   ];
 
@@ -44,9 +39,6 @@ const Skills = () => {
             Skills & Expertise
           </h2>
           <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit built through years of hands-on experience and continuous learning
-          </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

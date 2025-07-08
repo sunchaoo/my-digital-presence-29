@@ -22,7 +22,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Senior Product Manager at Amazon driving data-informed products and scalable solutions across global markets.
+              Senior Product Manager at Amazon driving Data, GenAI, and Computer Vision products and scalable solutions across global markets.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">

@@ -14,7 +14,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Senior PM at Amazon with 8+ years driving data-informed products across eCommerce, Metrics, API, 
+              Senior PM at Amazon with 8+ years experience in eCommerce, Metrics, API, 
               supply chain, and operations. I led global-scale product initiatives across Amazon Fresh and Estée Lauder—delivering 
               ML-driven metrics platforms, in-store automation tools, and supply chain systems used across US and EU.
             </p>
@@ -41,15 +41,14 @@ const About = () => {
             <Card className="p-6 shadow-card hover:shadow-glow transition-shadow duration-300">
               <h3 className="text-xl font-semibold text-primary mb-3">Education</h3>
               <p className="text-muted-foreground">
-                MBA from Columbia Business School | Certified SAFe Product Owner/Product Manager
+                MBA, Columbia Business School | IT Management UT Dallas | Certified SAFe Product Owner/Product Manager
               </p>
             </Card>
             
             <Card className="p-6 shadow-card hover:shadow-glow transition-shadow duration-300">
               <h3 className="text-xl font-semibold text-primary mb-3">Product Philosophy</h3>
               <p className="text-muted-foreground">
-                Transforming ambiguous business challenges into data-driven product strategies 
-                that deliver measurable impact at global scale.
+                Build purposeful, data-driven products that balance empathy with execution — empowering teams, delighting users, and driving impactful business outcomes.
               </p>
             </Card>
           </div>

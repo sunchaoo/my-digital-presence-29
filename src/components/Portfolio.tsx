@@ -3,11 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import locantaImage from "@/assets/locanta.jpg";
+import amazonFreshImage from "@/assets/amazon-fresh.jpg";
+import apiGatewayImage from "@/assets/api-gateway.jpg";
 
 const Portfolio = () => {
   const projects = [
     {
-      title: "Estée Lauder E-Commerce Experience",
+      title: "Enhanced eCommerce Experience (3%+ Conversion)",
       description: "Enhanced cart, account, and checkout experience driving conversion optimization and customer satisfaction across global markets.",
       technologies: ["Product Strategy", "UX Research", "A/B Testing", "Analytics"],
       liveUrl: "https://www.esteelauder.com/",
@@ -15,10 +17,18 @@ const Portfolio = () => {
       featured: true
     },
     {
-      title: "Amazon Fresh Store Operations",
+      title: "Amazon Grocery Expansion (Fresh, GO, and Whole Foods)",
       description: "In-store automation tools and supply chain systems delivering seamless grocery shopping experience across US and EU markets.",
       technologies: ["Operations", "Supply Chain", "ML Platforms", "Automation"],
       liveUrl: "https://www.amazon.com/fmc/m/30003175?almBrandId=QW1hem9uIEZyZXNo",
+      githubUrl: "#",
+      featured: true
+    },
+    {
+      title: "Launched API Product (10%+ ARR)",
+      description: "Microservices architecture with authentication, rate limiting, and comprehensive monitoring.",
+      technologies: ["Node.js", "Docker", "Redis", "AWS"],
+      liveUrl: "https://docs.ideonapi.com/",
       githubUrl: "#",
       featured: true
     },
@@ -34,14 +44,6 @@ const Portfolio = () => {
       title: "Mobile-First Portfolio",
       description: "Responsive portfolio website with advanced animations and optimized performance across all devices.",
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "API Gateway Service",
-      description: "Microservices architecture with authentication, rate limiting, and comprehensive monitoring.",
-      technologies: ["Node.js", "Docker", "Redis", "AWS"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
@@ -73,7 +75,7 @@ const Portfolio = () => {
         </div>
         
         {/* Featured Projects */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
           {featuredProjects.map((project, index) => (
             <Card 
               key={index} 
@@ -82,7 +84,19 @@ const Portfolio = () => {
               {index === 0 ? (
                 <img 
                   src={locantaImage} 
-                  alt="Estée Lauder E-Commerce Experience" 
+                  alt="Enhanced eCommerce Experience" 
+                  className="h-48 w-full object-cover"
+                />
+              ) : index === 1 ? (
+                <img 
+                  src={amazonFreshImage} 
+                  alt="Amazon Grocery Expansion" 
+                  className="h-48 w-full object-cover"
+                />
+              ) : index === 2 ? (
+                <img 
+                  src={apiGatewayImage} 
+                  alt="API Product Launch" 
                   className="h-48 w-full object-cover"
                 />
               ) : (
@@ -106,9 +120,11 @@ const Portfolio = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button size="sm" className="flex-1">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
+                  <Button size="sm" className="flex-1" asChild>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
                   </Button>
                 </div>
               </CardContent>
