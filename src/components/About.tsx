@@ -28,11 +28,11 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">8+</div>
-                <div className="text-muted-foreground">Years Experience</div>
+                <div className="text-muted-foreground">Years PM Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">Global</div>
-                <div className="text-muted-foreground">Scale Products</div>
+                <div className="text-3xl font-bold text-primary mb-2">3+</div>
+                <div className="text-muted-foreground">Managing Teams</div>
               </div>
             </div>
           </div>
