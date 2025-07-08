@@ -6,18 +6,18 @@ import { ExternalLink } from "lucide-react";
 const Portfolio = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with modern payment integration, inventory management, and real-time analytics.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      liveUrl: "#",
+      title: "Estée Lauder E-Commerce Experience",
+      description: "Enhanced cart, account, and checkout experience driving conversion optimization and customer satisfaction across global markets.",
+      technologies: ["Product Strategy", "UX Research", "A/B Testing", "Analytics"],
+      liveUrl: "https://www.esteelauder.com/",
       githubUrl: "#",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, team communication, and progress tracking.",
-      technologies: ["Vue.js", "Express", "Socket.io", "MongoDB"],
-      liveUrl: "#",
+      title: "Amazon Fresh Store Operations",
+      description: "In-store automation tools and supply chain systems delivering seamless grocery shopping experience across US and EU markets.",
+      technologies: ["Operations", "Supply Chain", "ML Platforms", "Automation"],
+      liveUrl: "https://www.amazon.com/fmc/m/30003175?almBrandId=QW1hem9uIEZyZXNo",
       githubUrl: "#",
       featured: true
     },
