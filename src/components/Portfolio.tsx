@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
+import locantaImage from "@/assets/locanta.jpg";
 
 const Portfolio = () => {
   const projects = [
@@ -78,7 +79,15 @@ const Portfolio = () => {
               key={index} 
               className="shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-1 overflow-hidden"
             >
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20"></div>
+              {index === 0 ? (
+                <img 
+                  src={locantaImage} 
+                  alt="Estée Lauder E-Commerce Experience" 
+                  className="h-48 w-full object-cover"
+                />
+              ) : (
+                <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20"></div>
+              )}
               <CardHeader>
                 <div className="flex justify-between items-start mb-2">
                   <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
